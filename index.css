@@ -12,6 +12,7 @@ html,body {
 	font-size: 62.5%;
 	overflow: hidden;
 }
+
 /*circle*/
 div.circle {
 	position: absolute;
@@ -31,12 +32,16 @@ div.circle {
 	cursor: pointer;
 	z-index: 2;
 	text-shadow: 8px 8px 5px #1ba693;
+	box-shadow: 15px 15px 5px #25393a;
 	-moz-border-radius: 100%;
 	     border-radius: 100%;
-	box-shadow: 15px 15px 5px #25393a;
 }
 div.circle_animation {
-	animation: cir 3s forwards;
+	-webkit-animation: cir 3s forwards;
+	   -moz-animation: cir 3s forwards;
+	    -ms-animation: cir 3s forwards;
+	     -o-animation: cir 3s forwards;
+	        animation: cir 3s forwards;
 }
 @keyframes cir {
 	0% {
@@ -56,7 +61,63 @@ div.circle_animation {
 		font-size: 3rem;		
 	}
 }
-/*github*/
+@-webkit-keyframes cir {
+	0% {
+		margin: auto auto;
+		margin-top: 168px;
+		height: 465px;
+		width: 465px;
+		text-align: center;
+		line-height: 465px;
+		font-size: 18rem;
+	}
+	100%{
+		margin-top: 12px;
+		height: 145px;
+		width: 145px;
+		line-height: 145px;
+		font-size: 3rem;		
+	}
+}
+@-moz-keyframes cir {
+	0% {
+		margin: auto auto;
+		margin-top: 168px;
+		height: 465px;
+		width: 465px;
+		text-align: center;
+		line-height: 465px;
+		font-size: 18rem;
+	}
+	100%{
+		margin-top: 12px;
+		height: 145px;
+		width: 145px;
+		line-height: 145px;
+		font-size: 3rem;		
+	}
+}
+@-o-keyframes cir {
+	0% {
+		margin: auto auto;
+		margin-top: 168px;
+		height: 465px;
+		width: 465px;
+		text-align: center;
+		line-height: 465px;
+		font-size: 18rem;
+	}
+	100%{
+		margin-top: 12px;
+		height: 145px;
+		width: 145px;
+		line-height: 145px;
+		font-size: 3rem;		
+	}
+}
+
+
+/*tag*/
 div.tag {
 	position: absolute;
 	right: 50%;
@@ -78,6 +139,8 @@ div.tag {
 	     -o-transform: rotate(30deg); 
 	        transform: rotate(30deg);	
 }
+
+/*tag_shadow*/
 div.tag_shadow {
 	position: absolute;
 	right: 50%;
@@ -99,13 +162,18 @@ div.tag_shadow {
 	     -o-transform: rotate(45deg); 
 	        transform: rotate(45deg);	
 }
+
 /*null_page1*/
 div.null_page1 {
 	height: 50%;
 	background: #ffe1a1;
 }
 div.page1_animation {
-	animation: page1 3s forwards;
+	-webkit-animation: page1 3s forwards;
+	   -moz-animation: page1 3s forwards;
+	    -ms-animation: page1 3s forwards;
+	     -o-animation: page1 3s forwards;
+	        animation: page1 3s forwards;
 }
 @keyframes page1 {
 	0%: {
@@ -115,13 +183,42 @@ div.page1_animation {
 		height: 10%;
 	}
 }
+@-webkit-keyframes page1 {
+	0%: {
+		height: 25%;
+	}
+	100%{
+		height: 10%;
+	}
+}
+@-moz-keyframes page1 {
+	0%: {
+		height: 25%;
+	}
+	100%{
+		height: 10%;
+	}
+}
+@-o-keyframes page1 {
+	0%: {
+		height: 25%;
+	}
+	100%{
+		height: 10%;
+	}
+}
+
 /*null_page2*/
 div.null_page2 {
 	height: 50%;
 	background: #60a785;
 }
 div.page2_animation {
-	animation: page2 3s forwards;
+	-webkit-animation: page2 3s forwards;
+	   -moz-animation: page2 3s forwards;
+	    -ms-animation: page2 3s forwards;
+	       -animation: page2 3s forwards;
+			animation: page2 3s forwards;
 }
 @keyframes page2 {
 	0%: {
@@ -131,43 +228,32 @@ div.page2_animation {
 		height: 90%;
 	}
 }
-div.fellow {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto auto;
-	margin-bottom: -70px;
-	height: 45px;
-	width: 30%;
-	padding-left: 10px;
-	padding-right: 10px;
-	border: 1px solid #25393a;
-	background: #25393a;
-	text-align: center;
-	-moz-border-radius: 100px;
-	     border-radius: 100px;
-}
-div.fellow_animation {
-	animation: fellow 5s forwards;
-}
-@keyframes fellow {
-	0%{
-		margin-bottom: -550px;
+@-webkit-keyframes page2 {
+	0%: {
+		height: 75%;
 	}
-	100%{
+	100% {
+		height: 90%;
+	}
+}
+@-moz-keyframes page2 {
+	0%: {
+		height: 75%;
+	}
+	100% {
+		height: 90%;
+	}
+}
+@-o-keyframes page2 {
+	0%: {
+		height: 75%;
+	}
+	100% {
+		height: 90%;
+	}
+}
 
-		margin-bottom: 70px;
-	}
-}
-div.fellow a{
-	text-decoration: none;
-	font-size: 2.5rem;
-	color: #ffffff;
-	line-height: 45px;
-	text-align: center;
-}
+/*iconfont*/
 div.iconfont {
 	position: absolute;
 	top: 0;
@@ -181,9 +267,37 @@ div.iconfont {
 
 }
 div.iconfont_animation {
-	animation: iconfont 5s forwards;
+	-webkit-animation: iconfont 3s forwards;
+	   -moz-animation: iconfont 3s forwards;
+	    -ms-animation: iconfont 3s forwards;
+	     -o-animation: iconfont 3s forwards;
+		    animation: iconfont 3s forwards;
 }
 @keyframes iconfont {
+	0%{
+		margin-bottom: -300px;
+	}
+	100%{
+		margin-bottom: 185px;
+	}
+}
+@-webkit-keyframes iconfont {
+	0%{
+		margin-bottom: -300px;
+	}
+	100%{
+		margin-bottom: 185px;
+	}
+}
+@-moz-keyframes iconfont {
+	0%{
+		margin-bottom: -300px;
+	}
+	100%{
+		margin-bottom: 185px;
+	}
+}
+@-o-keyframes iconfont {
 	0%{
 		margin-bottom: -300px;
 	}
@@ -231,4 +345,74 @@ div.iconfont > div.font > div.font-cusp span.sp {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 20px solid #568188;
+}
+
+/*fellow*/
+div.fellow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	margin-bottom: -70px;
+	height: 45px;
+	width: 30%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #25393a;
+	background: #25393a;
+	text-align: center;
+	-moz-border-radius: 100px;
+	     border-radius: 100px;
+}
+div.fellow_animation {
+	-webkit-animation: fellow 3s forwards;
+	   -moz-animation: fellow 3s forwards;
+	    -ms-animation: fellow 3s forwards;
+	     -o-animation: fellow 3s forwards;
+	        animation: fellow 3s forwards;
+}
+@-webkit-keyframes fellow {
+	0%{
+		margin-bottom: -550px;
+	}
+	100%{
+
+		margin-bottom: 70px;
+	}
+}
+@-moz-keyframes fellow {
+	0%{
+		margin-bottom: -550px;
+	}
+	100%{
+
+		margin-bottom: 70px;
+	}
+}
+@-o-keyframes fellow {
+	0%{
+		margin-bottom: -550px;
+	}
+	100%{
+
+		margin-bottom: 70px;
+	}
+}
+@keyframes fellow {
+	0%{
+		margin-bottom: -550px;
+	}
+	100%{
+
+		margin-bottom: 70px;
+	}
+}
+div.fellow a{
+	text-decoration: none;
+	font-size: 2.5rem;
+	color: #ffffff;
+	line-height: 45px;
+	text-align: center;
 }
