@@ -65,15 +65,17 @@ html,body {
 	@-webkit-keyframes cir {
 		0% {
 			margin: auto auto;
-			margin-top: 22vh168		height: 65vw;
+			margin-top: 22vh;		
+			height: 65vw;
 			width: 65vw;
 			text-align: center;
 			line-height: 65vw;
 			font-size: 10rem;
 		}
 		100%{
-			margin-top: 12px;
-			height: 32.52vh			width: 32.5vw;
+			margin-top: 2vh;
+			height: 32.52vw;
+			width: 32.5vw;
 			line-height: 32.5vw;
 			font-size: 5rem;		
 		}
