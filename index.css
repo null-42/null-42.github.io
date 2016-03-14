@@ -1,0 +1,234 @@
+@charset utf-8;
+
+/*All style*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei";
+}
+html,body {
+	position: relative;
+	height: 100%;
+	font-size: 62.5%;
+	overflow: hidden;
+}
+/*circle*/
+div.circle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	height: 465px;
+	width: 465px;
+	border: 1px solid #ff9c60;
+	background: #ff9c60;
+	text-align: center;
+	line-height: 465px;
+	font-size: 18rem;
+	color: #fefefe;
+	cursor: pointer;
+	z-index: 2;
+	text-shadow: 8px 8px 5px #1ba693;
+	-moz-border-radius: 100%;
+	     border-radius: 100%;
+	box-shadow: 15px 15px 5px #25393a;
+}
+div.circle_animation {
+	animation: cir 3s forwards;
+}
+@keyframes cir {
+	0% {
+		margin: auto auto;
+		margin-top: 168px;
+		height: 465px;
+		width: 465px;
+		text-align: center;
+		line-height: 465px;
+		font-size: 18rem;
+	}
+	100%{
+		margin-top: 12px;
+		height: 145px;
+		width: 145px;
+		line-height: 145px;
+		font-size: 3rem;		
+	}
+}
+/*github*/
+div.tag {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	margin-top: -160px;
+	margin-right: 124px;
+	height: 40px; 
+	width: 126px;
+	border: 1px solid #60a785;	
+	font-size: 2.5rem;
+	color: #fbffff;
+	background: #60a785;
+	text-align: center;
+	line-height: 40px;
+	z-index: 3;
+	-webkit-transform: rotate(30deg);
+	   -moz-transform: rotate(30deg); 
+	    -ms-transform: rotate(30deg); 
+	     -o-transform: rotate(30deg); 
+	        transform: rotate(30deg);	
+}
+div.tag_shadow {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	margin-top: -160px;
+	margin-right: 124px;
+	height: 40px; 
+	width: 126px;
+	border: 1px solid #24393e;	
+	font-size: 2.5rem;
+	color: #fbffff;
+	background: #24393e;
+	text-align: center;
+	line-height: 40px;
+	z-index: 1;
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg); 
+	    -ms-transform: rotate(45deg); 
+	     -o-transform: rotate(45deg); 
+	        transform: rotate(45deg);	
+}
+/*null_page1*/
+div.null_page1 {
+	height: 50%;
+	background: #ffe1a1;
+}
+div.page1_animation {
+	animation: page1 3s forwards;
+}
+@keyframes page1 {
+	0%: {
+		height: 25%;
+	}
+	100%{
+		height: 10%;
+	}
+}
+/*null_page2*/
+div.null_page2 {
+	height: 50%;
+	background: #60a785;
+}
+div.page2_animation {
+	animation: page2 3s forwards;
+}
+@keyframes page2 {
+	0%: {
+		height: 75%;
+	}
+	100% {
+		height: 90%;
+	}
+}
+div.fellow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	margin-bottom: -70px;
+	height: 45px;
+	width: 30%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #25393a;
+	background: #25393a;
+	text-align: center;
+	-moz-border-radius: 100px;
+	     border-radius: 100px;
+}
+div.fellow_animation {
+	animation: fellow 5s forwards;
+}
+@keyframes fellow {
+	0%{
+		margin-bottom: -550px;
+	}
+	100%{
+
+		margin-bottom: 70px;
+	}
+}
+div.fellow a{
+	text-decoration: none;
+	font-size: 2.5rem;
+	color: #ffffff;
+	line-height: 45px;
+	text-align: center;
+}
+div.iconfont {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	margin-bottom: -500px;
+	height: 40%;
+	width: 75%;
+
+}
+div.iconfont_animation {
+	animation: iconfont 5s forwards;
+}
+@keyframes iconfont {
+	0%{
+		margin-bottom: -300px;
+	}
+	100%{
+		margin-bottom: 185px;
+	}
+}
+div.iconfont > div.font {
+	float:left;
+	margin-left: 10%;
+	height: 100%;
+	width: 20%;
+	background: #ffffff;
+}
+div.iconfont > div.font > div.font-head {
+	height: 10%;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	position: relative;
+	border: 1px solid #568188;
+	background: #568188;
+	color: #ffffff;
+	font-size: 2rem;
+	text-align: center;
+}
+div.iconfont > div.font > div.font-head span.s1 {
+	display: inline-block;
+	position: absolute;
+	left: 15%;
+}
+div.iconfont > div.font > div.font-head span.s2 {
+	display: inline-block;
+	position: absolute;
+	right: 15%;
+}
+div.iconfont > div.font > div.font-cusp {
+	position: relative;
+}
+div.iconfont > div.font > div.font-cusp span.sp {
+	position: absolute;
+	left: 15%;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #568188;
+}
