@@ -65,7 +65,11 @@ html,body {
 	@-webkit-keyframes cir {
 		0% {
 			margin: auto auto;
+<<<<<<< HEAD
 			margin-top: 22vh;		
+=======
+			margin-top: 2vh;
+>>>>>>> master
 			height: 65vw;
 			width: 65vw;
 			text-align: center;
@@ -73,7 +77,11 @@ html,body {
 			font-size: 10rem;
 		}
 		100%{
+<<<<<<< HEAD
 			margin-top: 2vh;
+=======
+			margin-top: 12px;
+>>>>>>> master
 			height: 32.52vw;
 			width: 32.5vw;
 			line-height: 32.5vw;
